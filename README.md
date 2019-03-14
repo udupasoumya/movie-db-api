@@ -21,4 +21,5 @@ Test==>
 How to Run:
 1. get the code on to local
 2. update the api key you want to use in the env.properties file within Configurations
-3. You should be able to run the test and see the updated results in the Reports: test-output: ResultsExtentReport.html 
+3. Run the TestNG.xml
+4. You should be able to run the test and see the updated results in the Reports: test-output: ResultsExtentReport.html 
