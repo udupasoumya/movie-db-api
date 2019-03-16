@@ -40,12 +40,12 @@ OS name: "mac os x", version: "10.13.6", arch: "x86_64", family: "mac"
 `<plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
-               **<version>3.7.0</version>**
+               <version>3.7.0</version>
                 <configuration>
                     <release>11</release>
                 </configuration>
             </plugin>`
-7. Make sure that release above matches with the jdk on your system(as in the above case its 11)
+7. Make sure that release above(within configurations) matches with the jdk on your system(as in the above case its 11)
 8. Save and close pom.xml
 9. Now from cmd line within the project folder type >> **_mvn clean test_**
 10. This will run the test on local
