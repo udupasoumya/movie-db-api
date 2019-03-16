@@ -21,7 +21,7 @@ public class ResponseDetailsMethod extends HelperMethods {
     //Validate Response Status Code
     public  void validateStatusCode (Response res, int status) {
         jp=getPath(res);
-        Assert.assertEquals(jp.get("status_code"), status);
+        Assert.assertEquals((int)jp.get("status_code"), status);
     }
 
     //Use Key value logic to validate specific data within the Json Response

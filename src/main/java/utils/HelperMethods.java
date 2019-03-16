@@ -7,6 +7,7 @@ import org.json.JSONObject;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.lang.StringBuilder;
 
 import static io.restassured.RestAssured.given;
 
@@ -68,7 +69,7 @@ public class HelperMethods {
         StringBuilder request_token= new StringBuilder();
         String approval_url=initialSetUp.readConfig("HOST_AUTH");
         request_token.append("request_token:");
-        request_token.append(jp.get("request_token"));
+        request_token.append((String)jp.get("request_token"));
         initialSetUp.writeToConfig("API_TOKEN",request_token.toString());
         System.out.println(approval_url+jp.getString("request_token"));
         given().when().get(approval_url+jp.getString("request_token"));
